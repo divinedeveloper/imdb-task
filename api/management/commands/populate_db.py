@@ -44,8 +44,8 @@ class Command(BaseCommand):
                         movie.genre.add(genre)
                     movie.save()
 
-            self.stdout.write(self.style.SUCCESS('Successfully populated the database'))
-            return
+                self.stdout.write(self.style.SUCCESS('Successfully populated the database'))
+                return
 
         except IOError as e:
             self.stdout.write(self.style.ERROR(f'File not found. {e}'))
