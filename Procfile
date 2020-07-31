@@ -1,2 +1,2 @@
-web: gunicorn movies.movies.wsgi:application
+web: gunicorn movies.wsgi --log-level=info --log-file -
 
