@@ -18,7 +18,7 @@ class Command(BaseCommand):
         """
         try:
 
-            json_file = f'{settings.BASE_DIR}/../imdb.json'
+            json_file = f'{settings.BASE_DIR}/imdb.json'
 
             with open(json_file) as file:
                 # if file is to big for memory we can then use pandas
