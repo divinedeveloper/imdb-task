@@ -1,2 +1,2 @@
-web: gunicorn /app/movies/movies.wsgi
+web: gunicorn movies.wsgi:application
 
